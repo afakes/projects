@@ -1,0 +1,225 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page_title_container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+    background-color: #4a44ea22;
+    border-bottom: 5px solid #4a44ea;
+}
+
+.page_title_container i {
+
+    margin-right: 0.5em;
+    font-size: 1.5em;
+    color: #4a44eaFF;
+
+}
+
+.page_title_container h1 {
+    margin: 0;
+    /* font Roboto Condensed */
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #4a44ea33;
+    color: white;
+    padding: 1em;
+    border-bottom: 5px solid #4a44ea;
+}
+
+nav button {
+    background-color: #4a44ea;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin-right: 0.5em;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 105%;
+    border-radius: 5px;
+
+}
+
+nav button a  {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* shadow on hover  */
+nav button:hover {
+    /* border shadow */
+    box-shadow: 0 0 5px #4a44ea;
+}
+
+
+nav input {
+    padding: 0.5em;
+    border: 1px solid #4a44ea;
+    border-radius: 5px;
+    margin-right: 0.5em;
+    font-size: 105%;
+}
+
+/* shadow input on hover */
+nav input:hover {
+    box-shadow: 0 0 5px #4a44ea;
+}
+
+/* shadow input on focus */
+nav input:focus {
+    box-shadow: 0 0 5px #4a44ea;
+}
+
+
+#map { 
+    height: 800px; 
+    width: 868px;    
+}
+
+#table_container {
+    width: 100%;
+    height: 800px;
+    overflow: auto;
+    /* padding-left: 1em; */
+    padding-right: 1em;
+}
+
+#table_container table {
+    width:100%;
+    border-collapse: collapse;
+    
+}
+
+#table_container table th, td {
+    border: 1px solid #000;
+    padding: 0.5em;
+}
+
+#table_container table thead {
+    background-color: #4a44ea;
+    color: white;
+    /* hold thead at top */
+    position: sticky;
+    top: 0;
+}
+
+#table_container table tr {
+    background-color: #4a44ea22;;
+}
+
+#table_container table tr:hover {
+    background-color: #4a44ea99;
+    cursor: pointer;
+}
+
+
+.selected {
+    background-color: #999;
+    
+}
+
+
+.left_right {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    /* space between */
+    gap: 1em;
+    
+    /* up to two elements on each row */
+    flex-wrap: wrap;
+
+}
+
+
+
+
+.left_right section {
+
+    padding: 1em;
+    background-color: #4a44ea22;
+    /* border-bottom: 5px solid #4a44ea; */
+    margin-bottom: 1em;
+
+    width: 600px;
+    overflow: auto;
+    
+}
+
+.left_right section header {
+    
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    background-color: #4a44ea33;
+    
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    
+    font-size: 105%;
+}
+
+.left_right section header i {
+    margin-right: 0.5em;
+    font-size: 1.5em;
+    color: #4a44eaFF;
+}
+
+.left_right img {
+    height: 770px;
+    width: 540px;
+    padding: 1em;
+}
+
+.left_right img.avatar {
+    
+    width: 400px;
+    height:400px;
+    padding: 0.1em;
+    border: 10px solid #4a44ea55;
+    margin-left:15%;
+    margin-top: 2em;
+  }
+
+
+ .left_right section p {
+ 
+    padding: 1em;
+    line-height: 1.3em;
+    
+    /* justify text left and right */
+    text-align: justify;
+}
+
+
+.left_right section ul {
+    padding: 0;
+}
+
+
+.left_right section li {
+    
+    list-style: square;
+    padding: 0.5em;
+
+    /* font-family Roboto Condensed */
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 2em;
+}

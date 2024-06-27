@@ -1,0 +1,177 @@
+<html>
+
+<head>
+    <title>Adam Fakes::Projects</title>
+    <!-- import Google Font Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- import Google Font Roboto Condensed -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- import font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!-- load index.js -->
+    <script src="index.js"></script>
+    <script>
+
+
+        document.addEventListener('DOMContentLoaded', main);
+    </script>
+
+</head>
+
+<body>
+<div class="page_title_container">
+    <!-- font awesome globe -->
+    <i class="fas fa-globe"></i>
+    <h1>Adam Fakes::Projects</h1>
+</div>
+<nav>
+    <div>
+        
+
+
+        <button><a href="index.html"><i class="fas fa-home"></i>&nbsp;Home</a></button>
+        <button><a href="index.html?action=reload"><i class="fas fa-sync-alt"></i>&nbsp;Reload</a></button>
+
+        <!-- contact https://adamfakes.com/#contact -->
+        <button><a href="https://adamfakes.com/#contact" target="_contact"><i class="fas fa-envelope"></i>&nbsp;CONTACT</a></button>
+
+        <button><a href="https://adamfakes.com" target="_resume"><i class="fas fa-file"></i>&nbsp;RESUME</a></button>
+        
+        <button><a href="https://github.com/afakes/portfolio" target="_github"><i class="fas fa-code-branch"></i>&nbsp;GITHUB</a></button>
+
+        <!-- linkedIn -->
+        <button><a href="https://www.linkedin.com/in/adamfakes/" target="_linkedin"><i class="fab fa-linkedin"></i>&nbsp;LINKEDIN</a></button>
+
+        <!-- Geospatial demo https://adamfakes.com/au_regions/index.html -->
+        <button><a href="https://adamfakes.com/au_regions/index.html" target="_gep"><i class="fas fa-map-marked-alt"></i>&nbsp;Geospatial demo</a></button>
+
+        <!-- https://rgb.photography/ -->
+        <button><a href="https://rgb.photography/" target="_rgb"><i class="fas fa-camera"></i>&nbsp;PHOTOGRAPHY</a></button>
+
+    </div>
+</nav>
+
+<div class="left_right">
+
+    <section>
+        <!-- font awesome icon info  -->
+        <header><i class="fas fa-info"></i>INFO</header>
+        <div id="regions_info">
+            <img class="avatar" src="images/AdamFakes-hard-colour-li.jpg">
+            <p>
+                &nbsp;&nbsp;Over my 25-year career, I have held diverse roles, including data engineer, software engineer, cloud engineer, scientist, and geo-spatial analyst. My career spans government bodies, technology companies, universities, and commercial and scientific organisations. The common theme running through all these roles is my expertise in statistics, data interrogation, application development, programmatic feedback, and elucidation – visualisation and insight.<br>
+                &nbsp;&nbsp;Impact though science: I have gained extensive knowledge of environmental science, hydrology, statistics, and geo-spatial data over 10 years in academia and governmental science organisations. At CSIRO, I developed deep-learning models in Python, R, and C# to predict the impact of climate change on local ecology, aquatic fauna, and rainforest assemblages. I coded ingestion routines to transform and combine vector and raster geo-spatial data files and databases into neural network input and output layers.<br>
+                &nbsp;&nbsp;As a tenured researcher at James Cook University, I expanded on this work by curating multi-terabyte datasets of hydrological measures into a unified data store, ensuring accuracy, accountability, and governance. My scientific research and technological advancements resulted in co-authoring and publishing peer-reviewed journal articles and book chapters (Leblanc 2011, 2009; Bohnet 2008).<br>
+                &nbsp;&nbsp;Impact though Leadership and Commercial Product Development: As the self-appointed Head of Technology at RUBIX, I built and managed a dynamic team of 4 to 15 members. By utilising the available bandwidth of non-projected consultants, I developed tailored work packages for the delivery of datasets, products, and a complete web-based SaaS platform. My team's output included creating several machine learning algorithms, code repositories and data products. Notably, I developed a machine learning algorithm—a combination of bespoke code and programmatically determined hyper-parameters—for identifying and predicting electric vehicle charging station faults. This work enabled our client to deliver less expensive hardware remediation. <br>
+                &nbsp;&nbsp;Large Scale Cloud: At National Australia Bank, I developed extensive big data transfer pipelines. My deep understanding of low-level binary enabled me to control and eliminate single bit shift errors between legacy and cloud systems. Embracing data delivery patterns such as Extract, Transform, Load (ETL), Facade and Command, I built pipelines using combinations of Cloud-formation, NodeJS, Python, BASH, C, and SQL. The pipelines incorporated AWS Glue, Airflow, and Jenkins to orchestrate the ingestion, version control, audit, governance, transformation, creation, and storage of technical and business metadata into AWS data stores (S3, Redshift, and PostgreSQL).<br>
+                
+            </p>
+            
+        </div>
+    </section>
+
+
+    <section>
+        <!-- font awesome icon statistics  -->
+        <header><i class="fas fa-microscope"></i>HOME MICROSCOPE</header>
+        <video width="100%" controls>
+            <source src="images/home_microscope.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        <p>
+            &nbsp;&nbsp;This is a video from my home microscope. I purchased a this old microscope, 
+            I then used a Raspberry Pi and a camera to capture the video. The Raspberry Pi is connected to a
+            monitor and the video is displayed on the monitor. The Raspberry Pi is connected to my home network and 
+            eventually the video is streamed to a web page. 
+        </p>
+    </section>
+
+    <section>
+        <!-- font awesome icon map  -->
+        <header><i class="fas fa-microscope"></i>HOME MICROSCOPE</header>
+        <img src="images/home_microscope.jpg">
+        <p>
+            Still image from my home microscope, using a piece of old plastic as a slide.
+        </p>
+    </section>
+
+
+    <section>
+        <!-- font awesome icon map  -->
+        <header><i class="fas fa-map-marked-alt"></i>Climate Monitoring</header>
+        <img src="images/ClimateMonitoring.JPG">
+        
+    </section>
+
+
+
+    <section>
+        <!-- font awesome icon tree  -->
+        <header><i class="fas fa-tree"></i>Sap Flow Monitoring</header>
+        <img src="images/SapFlowMonitoring.PNG">
+    </section>
+
+    <section>
+        <!-- font awesome icon water  -->
+        <header><i class="fas fa-water"></i>Soil Moisture and Groundwater</header>
+        <img src="images/SoilMoistureAndGroundwaterPoster.PNG">
+    </section>
+
+    <section>
+        <!-- font awesome icon table  -->
+        <header><i class="fas fa-table"></i>Murray Darling Groundwater</header>
+        <img src="images/mdb_paper.png">
+        <p>
+            Since the 2000 the Murray Darling Basin has suffered from severe drought conditions. This project combines in-situ measurements of groundwater levels across the Murray Darling Basin (MDB). We use various interpolation methods,  data filters, numerical and spatial statistics to better understand how and where the groundwater has changed.<br>
+            The Murray-Darling Basin covers 1,061,469 square kilometres or approximately one-seventh (14%) of the total area of Australia (7,692,024 square kilometres).<br>
+            It contains over 40% of all Australian farms, which produce wool, cotton, wheat, sheep, cattle, dairy produce, rice, oil-seed, wine, fruit and vegetables for both domestic and overseas markets. As Australia's most important agricultural region, the Basin produces one third of Australia's food supply and supports over a third of Australia's total gross value of agricultural production.<br>
+        </p>
+        <h3>&nbsp;&nbsp;&nbsp;co-authored published papers</h3>
+        <ul>
+            <li>Leblanc, M et.al. (2011) Groundwater change in the Murray basin from long-term in situ monitoring and GRACE estimates Climate change effects on groundwater resources</li>
+            <li>Leblanc, M. et.al. (2009), Basin-scale, integrated observations of the early 21st century multi-year drought in southeast Australia, Water Resour. Res., 45</li>
+        </ul>
+    </section>
+
+    <section>
+        <!-- font awesome icon water  -->
+        <header><i class="fas fa-water"></i>Field Work</header>
+        <img src="images/2010-05-07-08-19-50_dsc_5110.jpg">
+        <p>
+            Operating the Sontek River Surveyor in the field.
+        </p>
+        <img src="images/contek-m9.jpg" style="height:500px; width: 500px; margin-left: 2em;">
+        <p>
+            The SonTek-M9 is the ultimate solution for collecting discharge data and conducting bathymetric surveys. The industry-validated and reliable M9 is an all-in-one ADCP, seamlessly combining the durability of the award-winning RiverSurveyor-M9 with the adaptable bathymetric capabilities of the HydroSurveyor-M9, offering unparalleled data collection flexibility.
+        </p>
+    </section>
+
+
+    <section>
+        <!-- font awesome icon shop  -->        
+        <header><i class="fas fa-shopping-cart"></i>RUBIX Data Store</header>
+        <img src="images/rubix_data_store.png">
+        <p>
+
+            Impact though Leadership and Commercial Product Development: As the self-appointed Head of Technology at RUBIX, I built and managed a dynamic team of 4 to 15 members. By utilising the available bandwidth of non-projected consultants, I developed tailored work packages for the delivery of datasets, products, and a complete web-based SaaS platform. My team's output included creating several machine learning algorithms, code repositories and data products<br>
+            <br>
+            <i>We've done all the hard work for you! Explore our extensive range of data sets which have been collected from multiple sources and methodically cleaned, wrangled and made ready for immediate consumption.</i>
+            <a href="https://store.rubix.zone/" target="_rubix">RUBIX Data Store</a>
+        </p>
+    </section>
+
+
+
+</div>
+
+
+
+</body>
+
+</html>
+
